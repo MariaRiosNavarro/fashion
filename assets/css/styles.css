@@ -24,6 +24,7 @@
   --main-text-color: #fff;
   --secondary-text-color: #999;
   --hover-color: #e8bf96;
+  --lines-color: #3c3636;
 }
 
 html {
@@ -73,7 +74,7 @@ button {
   font-weight: 400;
   line-height: 2.7rem;
   border-radius: 83.92px;
-  border: 1px solid #3c3636;
+  border: 1px solid var(--lines-color);
   padding: 3.3rem 3.5rem;
 }
 
@@ -93,6 +94,7 @@ button {
   width: 100vw;
   align-items: center;
   height: 8.5rem;
+  border-bottom: 1px solid var(--lines-color);
 }
 
 .nav-list {
@@ -132,9 +134,10 @@ button {
 
 .big-home-wrapper {
   width: 75vw;
-  margin: 8rem auto 11rem auto;
+  margin: 0 auto 11rem auto;
   display: flex;
   align-items: flex-start;
+  padding-top: 8rem;
 }
 
 .big-home-header {
@@ -306,6 +309,10 @@ button {
 }
 
 /* !section three:work */
+
+#work {
+  width: 75vw;
+}
 
 /* work code, remove latter */
 :not(.main-header) img:not(section#home img):not(.main-header img) {
