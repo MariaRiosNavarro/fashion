@@ -361,9 +361,10 @@ button {
   right: 0;
 }
 
-/* work code, remove latter */
-:not(.main-header) img:not(section#home img):not(.main-header img) {
-  display: none;
+/* only work section */
+
+.work-team {
+  display: flex;
 }
 
 /* !section four:service */
