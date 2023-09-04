@@ -367,6 +367,9 @@ button {
 
 .row {
   display: flex;
+  justify-content: space-between;
+  background-color: red;
+  align-items: flex-end;
 }
 
 .work-item {
