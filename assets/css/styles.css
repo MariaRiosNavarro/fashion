@@ -6,12 +6,19 @@
   padding: 0;
 }
 
+:root {
+  --bg-color: #272422;
+  --main-text-color: #fff;
+  --secondary-text-color: #999;
+  --hover-color: #e8bf96;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #272422;
+  background-color: var(--bg-color);
 }
 
 h1,
@@ -20,10 +27,19 @@ h3,
 h4,
 button,
 strong,
+a,
 .footer-list {
-  color: #fff;
+  color: var(--main-text-color);
 }
 
 p {
-  color: #999;
+  color: var(--secondary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
