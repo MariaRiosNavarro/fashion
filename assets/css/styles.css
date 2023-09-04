@@ -47,6 +47,12 @@ a,
   color: var(--main-text-color);
 }
 
+h1,
+h2,
+h3 {
+  font-family: NY, Arial, Helvetica, sans-serif;
+}
+
 p,
 .grey {
   color: var(--secondary-text-color);
@@ -87,12 +93,12 @@ button {
   width: 100vw;
   align-items: center;
   height: 8.5rem;
-  margin: auto 5rem;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-around;
+  padding-right: 5rem;
 }
 
 .nav-list li {
@@ -110,6 +116,7 @@ button {
 
 .logo {
   height: 4rem;
+  padding-left: 5rem;
 }
 
 /* # main */
@@ -127,18 +134,17 @@ button {
   width: 75vw;
   margin: 8rem auto 11rem auto;
   display: flex;
-  border: 3px solid red;
+  align-items: flex-start;
 }
 
 .big-home-header {
-  width: 35vw;
+  width: 25vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 10;
   margin: 0 auto;
-  border: 3px solid green;
 }
 
 .play-logo {
@@ -154,7 +160,6 @@ button {
 
 .big-home-header :is(h1, h2) {
   text-align: center;
-  font-family: NY, Arial, Helvetica, sans-serif;
   font-size: 22rem;
   font-weight: 400;
   line-height: 19rem;
@@ -162,7 +167,6 @@ button {
 
 .big-home-header h3 {
   text-align: center;
-  font-family: NY, Arial, Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: 400;
   line-height: 4.5rem;
@@ -189,14 +193,29 @@ button {
 /* small container first*/
 
 .header-img-container {
-  display: inline-block;
-  padding-top: 19rem;
+  width: 25vw;
+  display: inline-flex;
+  flex-direction: column;
+  padding-top: 26rem;
 }
 
-.header-img-container .text-section {
-  padding-top: 11rem;
+.img-text-wrapper {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-img-blond {
+  text-align: center;
+  max-width: 100%; /* Das Bild wird seine natürliche Breite beibehalten */
+  margin: 0 auto;
+}
+
+.img-text-wrapper .text-section {
+  padding-top: 17rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .header-img-container .home-wrapper {
@@ -225,17 +244,20 @@ button {
 
 .header-gif-container {
   display: inline-block;
-  width: 40%;
+  width: 25vw;
+  position: relative;
+  height: auto;
 }
 
-.header-gif-container img {
+.header-gif {
+  height: 50vh;
+  overflow: hidden;
   width: 100%;
-  height: 60%;
   object-fit: cover;
 }
 
 .gif-text-section p {
-  font-family: Inter;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.7rem;
@@ -283,12 +305,12 @@ button {
   padding-bottom: 7.2rem;
 }
 
+/* !section three:work */
+
 /* work code, remove latter */
 :not(.main-header) img:not(section#home img):not(.main-header img) {
   display: none;
 }
-
-/* !section three:work */
 
 /* !section four:service */
 
