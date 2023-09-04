@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Euclid;
+  src: url("../fonts/Euclid/Euclid\ Circular\ A\ Medium.ttf");
+}
+@font-face {
+  font-family: NY;
+  src: url("../fonts/NewYork/NewYork\ PERSONAL\ USE.otf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 *,
 *::before,
 *::after {
@@ -19,6 +32,7 @@ html {
 
 body {
   background-color: var(--bg-color);
+  width: 100vw;
 }
 
 h1,
@@ -28,11 +42,13 @@ h4,
 button,
 strong,
 a,
+.white,
 .footer-list {
   color: var(--main-text-color);
 }
 
-p {
+p,
+.grey {
   color: var(--secondary-text-color);
 }
 
@@ -43,3 +59,157 @@ ul {
 a {
   text-decoration: none;
 }
+
+button {
+  background-color: transparent;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  border: 1px solid #3c3636;
+  border-radius: 120px;
+  padding: 3rem;
+}
+
+.hover-color {
+  color: var(--hover-color);
+}
+
+.hover-img {
+  display: none;
+}
+
+/* # header + nav */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  height: 8.5rem;
+  margin: auto 5rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.nav-list li a {
+  text-align: right;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+/* # main */
+
+/* !section one:home */
+
+#home {
+  background: url("../img/background.png") no-repeat center;
+  background-size: contain;
+}
+
+.big-home-wrapper {
+  width: 75vw;
+  margin: 0 auto;
+  border: 3px solid red;
+  display: flex;
+}
+
+.big-home-header {
+  width: 35vw;
+  border: 3px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  z-index: 10;
+}
+
+.play-logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid var(--hover-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-home-header :is(h1, h2) {
+  text-align: center;
+  font-family: NY, Arial, Helvetica, sans-serif;
+  font-size: 20rem;
+  font-weight: 400;
+  line-height: 19rem;
+}
+
+.big-home-header h3 {
+  text-align: center;
+  font-family: NY, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+
+.big-home-header h3:first-of-type {
+  padding-top: 4rem;
+}
+
+.big-home-header h3:last-of-type {
+  padding-bottom: 13rem;
+}
+
+.big-header-img-container {
+  position: relative;
+}
+
+.deko-stripes {
+  position: absolute;
+  top: -4.5rem;
+  left: -4.5rem;
+}
+
+/* small containers */
+
+.header-img {
+  background-color: red;
+  display: inline-block;
+}
+
+.header-gif {
+  background-color: pink;
+  display: inline-block;
+}
+
+/* work code, remove latter */
+:not(.main-header) img:not(section#home img):not(.main-header img) {
+  display: none;
+}
+
+/* !section two:about */
+
+/* !section three:work */
+
+/* !section four:service */
+
+/* !section five:blog */
+
+/* !section six:award */
+
+/* !section seven:contact */
+
+/* #footer */
