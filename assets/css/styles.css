@@ -66,9 +66,9 @@ button {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.7rem;
+  border-radius: 83.92px;
   border: 1px solid #3c3636;
-  border-radius: 120px;
-  padding: 3rem;
+  padding: 3.3rem 3.5rem;
 }
 
 .hover-color {
@@ -120,12 +120,14 @@ button {
   background: url("../img/background.png") no-repeat center;
   background-size: contain;
   position: relative;
+  margin: 0 auto;
 }
 
 .big-home-wrapper {
   width: 75vw;
   margin: 8rem auto 11rem auto;
   display: flex;
+  border: 3px solid red;
 }
 
 .big-home-header {
@@ -135,6 +137,8 @@ button {
   align-items: center;
   flex-direction: column;
   z-index: 10;
+  margin: 0 auto;
+  border: 3px solid green;
 }
 
 .play-logo {
@@ -154,7 +158,6 @@ button {
   font-size: 22rem;
   font-weight: 400;
   line-height: 19rem;
-  padding-left: 9rem;
 }
 
 .big-home-header h3 {
@@ -259,7 +262,6 @@ button {
 }
 
 #about h2 {
-  font-family: NY, Arial, Helvetica, sans-serif;
   font-size: 10rem;
   font-weight: 400;
   line-height: 11rem;
@@ -267,6 +269,18 @@ button {
 
 #about span {
   display: block;
+  text-align: center;
+}
+
+#about p {
+  text-align: center;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  width: 80rem;
+  padding-top: 1.7rem;
+  padding-bottom: 7.2rem;
 }
 
 /* work code, remove latter */
