@@ -25,6 +25,7 @@
   --secondary-text-color: #999;
   --hover-color: #e8bf96;
   --lines-color: #3c3636;
+  --main-width: 75vw;
 }
 
 html {
@@ -133,7 +134,7 @@ button {
 }
 
 .big-home-wrapper {
-  width: 75vw;
+  width: var(--main-width);
   margin: 0 auto 11rem auto;
   display: flex;
   align-items: flex-start;
@@ -141,7 +142,7 @@ button {
 }
 
 .big-home-header {
-  width: 25vw;
+  width: calc(var(--main-width) / 3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +197,7 @@ button {
 /* small container first*/
 
 .header-img-container {
-  width: 25vw;
+  width: calc(var(--main-width) / 3);
   display: inline-flex;
   flex-direction: column;
   padding-top: 26rem;
@@ -365,27 +366,46 @@ button {
 
 /* only work section */
 
+.work-team {
+  padding-bottom: 10vh;
+}
+
 .row {
   display: flex;
-  justify-content: space-between;
-  background-color: red;
-  align-items: flex-end;
+  margin-bottom: 24vh;
+  gap: 4rem;
+  overflow: hidden;
 }
 
 .work-item {
   width: 37.5vw;
+  position: relative;
 }
 
 .big-pic {
-  height: 90rem;
+  height: 70vh;
   width: 37.5vw;
   object-fit: cover;
 }
 
 .sm-pic {
-  height: 60rem;
-  width: 44rem;
+  height: 40vh;
+  width: 20vw;
   object-fit: cover;
+}
+
+.sm-one {
+  position: absolute;
+  right: 0;
+  bottom: 4.5rem;
+  overflow: hidden;
+}
+
+.sm-two {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  overflow: hidden;
 }
 
 .hover-text-container {
