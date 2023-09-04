@@ -248,7 +248,7 @@ button {
 
 .header-gif-container {
   display: inline-block;
-  width: 25vw;
+  width: calc(var(--main-width) / 3);
   position: relative;
   height: auto;
 }
@@ -285,7 +285,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75vw;
+  width: var(--main-width);
   margin: 0 auto;
   border-bottom: 1px solid var(--lines-color);
 }
@@ -315,7 +315,7 @@ button {
 /* !section three:work */
 
 #work {
-  width: 75vw;
+  width: var(--main-width);
   margin: 0 auto;
   overflow: hidden;
 }
@@ -329,7 +329,7 @@ button {
 .same-header h2 {
   font-size: 10rem;
   font-weight: 400;
-  line-height: 109.824px;
+  line-height: 10rem;
 }
 
 .same-header h2 span {
@@ -413,13 +413,28 @@ button {
 }
 /* !section four:service */
 
+#service {
+  width: var(--main-width);
+  margin: 0 auto;
+}
+
 /* !section five:blog */
 #blog {
-  width: 75vw;
+  width: var(--main-width);
   margin: 0 auto;
 }
 
 /* !section six:award */
+
+.award-bg {
+  background: url("../gif/sparkler.gif") no-repeat center;
+  background-size: cover;
+}
+
+.main-width {
+  width: var(--main-width);
+  margin: 0 auto;
+}
 
 /* !section seven:contact */
 
