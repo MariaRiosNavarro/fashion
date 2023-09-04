@@ -119,6 +119,7 @@ button {
 #home {
   background: url("../img/background.png") no-repeat center;
   background-size: contain;
+  position: relative;
 }
 
 .big-home-wrapper {
@@ -218,6 +219,7 @@ button {
 }
 
 /* small container first*/
+
 .header-gif-container {
   display: inline-block;
   width: 40%;
@@ -229,9 +231,6 @@ button {
   object-fit: cover;
 }
 
-.gif-text-section {
-}
-
 .gif-text-section p {
   font-family: Inter;
   font-size: 1.8rem;
@@ -240,6 +239,12 @@ button {
   padding-left: 14rem;
   padding-right: 7rem;
   padding-top: 22rem;
+}
+
+.curly-arroy {
+  position: absolute;
+  bottom: 14rem;
+  right: 0;
 }
 
 /* work code, remove latter */
