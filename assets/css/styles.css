@@ -124,7 +124,7 @@ button {
 
 .big-home-wrapper {
   width: 75vw;
-  margin: 8rem auto 0 auto;
+  margin: 8rem auto 11rem auto;
   display: flex;
 }
 
@@ -236,9 +236,11 @@ button {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.7rem;
-  padding-left: 14rem;
-  padding-right: 7rem;
-  padding-top: 22rem;
+  width: 90%;
+  padding-top: 30%;
+  padding-left: 30%;
+  margin: 0 auto;
+  overflow: visible;
 }
 
 .curly-arroy {
@@ -247,12 +249,30 @@ button {
   right: 0;
 }
 
+/* !section two:about */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about h2 {
+  font-family: NY, Arial, Helvetica, sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 11rem;
+}
+
+#about span {
+  display: block;
+}
+
 /* work code, remove latter */
 :not(.main-header) img:not(section#home img):not(.main-header img) {
   display: none;
 }
-
-/* !section two:about */
 
 /* !section three:work */
 
