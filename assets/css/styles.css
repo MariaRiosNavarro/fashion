@@ -211,7 +211,7 @@ button {
 
 .header-img-blond {
   text-align: center;
-  max-width: 100%; /* Das Bild wird seine natürliche Breite beibehalten */
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -316,6 +316,7 @@ button {
 #work {
   width: 75vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* same styles in header of work & blog */
@@ -338,6 +339,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 6.5rem;
 }
 
 .same-line {
@@ -363,10 +365,29 @@ button {
 
 /* only work section */
 
-.work-team {
+.row {
   display: flex;
 }
 
+.work-item {
+  width: 37.5vw;
+}
+
+.big-pic {
+  height: 90rem;
+  width: 37.5vw;
+  object-fit: cover;
+}
+
+.sm-pic {
+  height: 60rem;
+  width: 44rem;
+  object-fit: cover;
+}
+
+.hover-text-container {
+  display: none;
+}
 /* !section four:service */
 
 /* !section five:blog */
