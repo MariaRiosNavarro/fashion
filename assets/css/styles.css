@@ -122,6 +122,10 @@ button {
 
 /* # main */
 
+main {
+  margin: 0 auto;
+}
+
 /* !section one:home */
 
 #home {
@@ -752,17 +756,17 @@ button {
 
 footer {
   width: 100vw;
-  padding: 8rem 5rem;
+  padding: 8rem;
   display: flex;
 }
 
 footer .logo {
-  padding-right: 22rem;
+  padding-right: 25rem;
 }
 
 .footer-list {
   display: flex;
-  padding-right: 22rem;
+  padding-right: 25rem;
 }
 
 .footer-list li {
