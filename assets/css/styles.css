@@ -657,7 +657,42 @@ button {
 
 .main-width {
   width: var(--main-width);
-  margin: 0 auto;
+  margin: 11rem auto;
+}
+.main-width h2 {
+  color: #fff;
+  font-family: NY, Arial, Helvetica, sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 10rem;
+}
+
+.award-wrapper {
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+  display: flex;
+}
+
+.award-text {
+  width: 39rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin: 0 15rem;
+}
+
+.award-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-logo-wrapper strong {
+  margin-top: 2rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2.7rem;
 }
 
 /* !section seven:contact */
