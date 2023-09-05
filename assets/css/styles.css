@@ -673,7 +673,7 @@ main {
 
 #contact {
   width: var(--main-width);
-  margin: 10rem auto;
+  margin: 10rem auto 0 auto;
   border-bottom: 1px solid var(--lines-color);
 }
 
@@ -683,7 +683,6 @@ main {
   font-weight: 500;
   line-height: 2.7rem;
   padding-bottom: 1.7rem;
-  border-bottom: 1px solid var(--lines-color);
 }
 
 .contact-wrapper {
@@ -716,17 +715,24 @@ main {
 
 footer {
   width: 100vw;
-  padding: 8rem;
+  border-top: 1px solid var(--lines-color);
   display: flex;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 10rem;
 }
 
 footer .logo {
-  padding-right: 25rem;
+  padding-left: 2rem;
+  padding-right: 10rem;
+  width: 20vw;
+  object-fit: contain;
 }
 
 .footer-list {
   display: flex;
-  padding-right: 25rem;
+  margin: 0 auto;
 }
 
 .footer-list li {
@@ -737,15 +743,15 @@ footer .logo {
   line-height: 2.7rem;
 }
 
-.footer-main-list,
-.footer-works-list,
-.footer-col {
-  flex-direction: column;
-  padding-right: 22rem;
+.footer1,
+.footer2 {
+  width: 14vw;
+  margin: 0 auto;
 }
 
-.footer-sozial-list li {
-  margin: 1rem;
+.footer-main-list,
+.footer-works-list {
+  flex-direction: column;
 }
 
 .footer-sozial-list p {
@@ -756,11 +762,26 @@ footer .logo {
   line-height: 2.7rem;
 }
 
+.footer3 {
+  width: 17vw;
+  margin: 0 auto;
+}
+
+.footer-col {
+  width: 23vw;
+  margin: 0 auto;
+}
+
 .sozial-line {
   width: 10rem;
   height: 1px;
   background-color: var(--secondary-text-color);
   margin: 2.2rem 0;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-col input {
@@ -772,4 +793,5 @@ footer .logo {
 
 .footer-col button {
   padding: 2.1rem 4.3rem;
+  width: 15rem;
 }
