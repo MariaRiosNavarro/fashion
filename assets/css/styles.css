@@ -398,33 +398,25 @@ button {
   object-fit: cover;
 }
 
-.big-pic {
-}
-
-.sm-pic {
-}
-
-.sm-one {
-}
-
-.sm-two {
-}
-
 /* hover */
+
+.work-item {
+  position: relative;
+}
 
 .hover-text-container {
   display: none;
-  /* position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 0, 0, 0.214);
   height: auto;
   width: auto;
-  margin-top: 10rem; */
+  margin-top: 4rem;
+  margin-left: 4rem;
 }
 
-.img-hover:hover + .hover-text-container {
-  /* display: inline-block; */
+.work-pic:hover + .hover-text-container {
+  display: inline-block;
 }
 
 .hover-text-container p {
@@ -433,13 +425,14 @@ button {
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 75.8px;
+  margin-top: 1.3rem;
 }
 .hover-text-container h2 {
   font-family: NY, Arial, Helvetica, sans-serif;
   font-size: 6rem;
   font-weight: 400;
   line-height: 7.5rem;
+  margin-top: 0;
 }
 
 .lastname {
