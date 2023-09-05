@@ -282,8 +282,10 @@ button {
   align-items: center;
   justify-content: center;
   width: var(--main-width);
-  margin: 0 auto;
+  border-top: 1px solid var(--lines-color);
   border-bottom: 1px solid var(--lines-color);
+  margin: 0 auto;
+  padding: 10vh 0 15vh 0;
 }
 
 #about h2 {
@@ -312,7 +314,7 @@ button {
 
 #work {
   width: var(--main-width);
-  margin: 0 auto;
+  margin: 14vh auto;
   overflow: hidden;
 }
 
@@ -349,10 +351,10 @@ button {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.3rem;
-  max-width: 63rem;
+  max-width: 60rem;
   margin-left: 4rem;
   margin-right: 14vw;
-  flex-shrink: 1;
+  flex-shrink: 4;
 }
 
 .same-button {
