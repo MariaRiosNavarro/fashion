@@ -535,6 +535,10 @@ main {
   border-top: 1px solid var(--lines-color);
 }
 
+.blog-article {
+  padding-bottom: 10rem;
+}
+
 .blog-list {
   display: flex;
   gap: 10rem;
@@ -760,6 +764,9 @@ footer .logo {
   font-style: normal;
   font-weight: 400;
   line-height: 2.7rem;
+}
+.footer-sozial-list li {
+  padding-right: 1rem;
 }
 
 .footer3 {
