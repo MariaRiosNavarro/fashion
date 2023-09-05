@@ -577,10 +577,25 @@ button {
   gap: 10rem;
 }
 
+.blog-item {
+  overflow: hidden;
+  height: 100%;
+}
+
 .blog-item img {
   width: 20vw;
-  height: 30vh;
+  max-height: 30vh;
+  height: 250px;
+  max-height: 250px;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-item img:hover {
+  transform: scale(1.2);
 }
 
 .blog-item p {
