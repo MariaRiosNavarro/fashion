@@ -535,7 +535,7 @@ main {
 .acting-foto,
 .modelling-foto,
 .artist-foto {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -546,7 +546,7 @@ main {
 /* dont work? */
 
 .service-item:hover .costume-foto {
-  display: block;
+  visibility: visible;
   z-index: 99;
 }
 
