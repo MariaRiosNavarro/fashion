@@ -457,10 +457,6 @@ button {
   border-bottom: 1px solid var(--lines-color);
 }
 
-.hover-img {
-  display: none;
-}
-
 .grid-article {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -522,6 +518,24 @@ button {
 
 .service-item h2:hover {
   color: var(--hover-color);
+}
+
+/* pics hover */
+
+.image-wrapper {
+  position: relative;
+}
+
+.costume-foto,
+.acting-foto,
+.modelling-foto,
+.artist-foto {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* !section five:blog */
