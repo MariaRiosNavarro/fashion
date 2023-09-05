@@ -522,6 +522,10 @@ button {
 
 /* pics hover */
 
+.image-wrapper {
+  position: relative;
+}
+
 .costume-foto,
 .acting-foto,
 .modelling-foto,
@@ -534,13 +538,9 @@ button {
   width: 100%;
 }
 
-.image-wrapper {
-  position: relative;
-}
-
 /* dont work? */
 
-.service-item.costume-item:hover .costume-foto {
+.service-item:hover .costume-foto {
   display: block;
   z-index: 99;
 }
