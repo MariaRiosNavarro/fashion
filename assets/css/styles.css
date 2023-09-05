@@ -522,10 +522,6 @@ button {
 
 /* pics hover */
 
-.image-wrapper {
-  position: relative;
-}
-
 .costume-foto,
 .acting-foto,
 .modelling-foto,
@@ -536,6 +532,37 @@ button {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+/* dont work? */
+
+.service-item.costume-item:hover .costume-foto {
+  display: block;
+  z-index: 99;
+}
+
+.costume-item:hover .costume-foto {
+  display: block;
+  z-index: 99;
+}
+
+.acting-item:hover .acting-foto {
+  display: block;
+  z-index: 99;
+}
+
+.modelling-item:hover .modelling-foto {
+  display: block;
+  z-index: 99;
+}
+
+.artist-item:hover .artist-foto {
+  display: block;
+  z-index: 99;
 }
 
 /* !section five:blog */
