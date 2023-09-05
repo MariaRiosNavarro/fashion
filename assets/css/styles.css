@@ -662,15 +662,25 @@ button {
 .main-width h2 {
   color: #fff;
   font-family: NY, Arial, Helvetica, sans-serif;
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: 400;
   line-height: 10rem;
+  padding-right: 35rem;
 }
 
 .award-wrapper {
-  padding-top: 3.9rem;
-  padding-bottom: 3.9rem;
-  display: flex;
+  padding-top: 8.9rem;
+  position: relative;
+}
+
+.award-logo-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.award-logo-wrapper img {
+  width: 12rem;
 }
 
 .award-text {
@@ -679,7 +689,7 @@ button {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.3rem;
-  margin: 0 15rem;
+  margin: 0 auto;
 }
 
 .award-logo-wrapper {
