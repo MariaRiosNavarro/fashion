@@ -465,7 +465,7 @@ main {
 .services-article {
   display: flex;
   position: relative;
-  margin: 10rem auto;
+  margin: 10rem auto 15rem auto;
 }
 .services {
   display: flex;
@@ -507,8 +507,8 @@ main {
 
 .big {
   position: absolute;
-  height: 45vh;
-  width: 19vw;
+  height: 70%;
+  width: 20%;
   left: 0;
   bottom: 0;
 }
@@ -517,8 +517,8 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 13vw;
-  height: 30vh;
+  width: 17%;
+  height: 50%;
 }
 
 .service-item:hover img {
@@ -530,7 +530,9 @@ main {
 #blog {
   width: var(--main-width);
   margin: 0 auto;
-  padding: 10rem auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-top: 1px solid var(--lines-color);
 }
 
 .blog-list {
